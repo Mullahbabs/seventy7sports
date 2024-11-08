@@ -596,7 +596,7 @@
 
 .gallery .gallery-item .gallery-content .gallery-inner {
     transition: 0.5s;
-    background: #318CE7(0, 0, 0, 0.1);
+    background: var(--bs-primary);
     padding-top: 40px;
 }
 
