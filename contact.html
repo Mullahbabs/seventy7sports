@@ -136,22 +136,22 @@
                         <div class="col-xl-5 bg-secondary">
                             <h1 class="mb-4">Get in touch</h1>
                             <p class="mb-4 text-white">For enquiries &amp; clarifications, please don't hesitate</p>
-                            <form>
+                            <form id="contactForm" onsubmit="sendMail(event)">
                                 <div class="row gx-4 gy-3 bg-secondary">
                                     <div class="col-xl-6">
-                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Your First Name">
+                                        <input type="text" name="name" class="form-control bg-white border-0 py-3 px-4" placeholder="Your First Name">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="email" class="form-control bg-white border-0 py-3 px-4" placeholder="Your Email">
+                                        <input type="email" name="email" class="form-control bg-white border-0 py-3 px-4" placeholder="Your Email">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Your Phone">
+                                        <input type="text" name="phone" class="form-control bg-white border-0 py-3 px-4" placeholder="Your Phone">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="text" class="form-control bg-white border-0 py-3 px-4" placeholder="Subject">
+                                        <input type="text" name="subject" class="form-control bg-white border-0 py-3 px-4" placeholder="Subject">
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="form-control bg-white border-0 py-3 px-4" rows="7" cols="10" placeholder="Your Message"></textarea>
+                                        <textarea name="message" class="form-control bg-white border-0 py-3 px-4" rows="7" cols="10" placeholder="Your Message"></textarea>
                                     </div>
                                     <div class="col-12">
                                         <button class="btn-hover-bg btn btn-primary w-100 py-3 px-5" type="submit">Submit</button>
@@ -195,7 +195,6 @@
             </div>
         </div>
         <!-- Contact End -->
-
 
         <!-- Footer Start -->
         <div class="container-fluid footer bg-dark text-body py-5">
@@ -312,7 +311,7 @@
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://bellahteck.com">BellaTECH LTD.</a>
+                        Powered By <a class="border-bottom" href="https://bellahteck.com">BellaTECH LTD.</a>
                     </div>
                 </div>
             </div>
@@ -336,6 +335,30 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+     
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+     <script>
+    // Initialize EmailJS with your User ID
+    (function() {
+        emailjs.init("S-xQwmEV2I8oavOc1");
+    })();
+
+    // Function to handle form submission
+    function sendMail(event) {
+        event.preventDefault();  // Prevent default form submission
+
+        // Use EmailJS to send form data
+        emailjs.sendForm('service_5tf829h', 'template_y9u8ba5', '#contactForm')
+        .then((result) => {
+            alert("Form sent successfully!");
+            document.getElementById("contactForm").reset();  // Optional: reset form after submission
+        }, (error) => {
+            alert("Failed to send form: " + error.text);
+        });
+    }
+  </script>
 
     </body>
 
