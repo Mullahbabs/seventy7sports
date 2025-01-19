@@ -431,8 +431,6 @@
 
 .causes .causes-item .causes-content {
     background: var;
-    border-color: ;
-    border-style: ;
     border-top: 0;
 
 }
@@ -526,7 +524,6 @@
     bottom: 0;
     left: 0;
     padding: 20px;
-    background:;
     color: var(--bs-white) !important;
     display: flex;
     align-items: end;
@@ -586,7 +583,6 @@
     height: 0;
     bottom: 0; 
     left: 0;
-    background: ;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -603,12 +599,14 @@
     transition: 0.5s;
     background: var(--bs-primary);
     padding-top: 40px;
+    color: #192531;
 }
 
 .gallery .gallery-item:hover .gallery-content .gallery-inner {
     background: rgba(0, 0, 255, 0);
     padding: 50px 0;
     display: flex;
+    color: #192531;
     flex-direction: column;
     align-items: center;
     justify-content: center;
