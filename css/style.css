@@ -350,8 +350,6 @@
     }
 }
 
-}
-
 .play-button i {
     font-size: 24px;
     color: var(--bs-primary) !important; /* Adjust color to your primary theme */
@@ -435,6 +433,43 @@
     font-size: 30px;
 }
 /*** Counter End ***/
+
+/*** Video Modal Styling ***/
+.video-modal {
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/counterbg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.video-modal h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.video-modal .btn {
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.video-modal .btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.modal-content {
+    background: black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.modal-body .ratio {
+    background: black;
+    border-radius: 8px;
+}
+
 
 
 /*** causes Start ***/

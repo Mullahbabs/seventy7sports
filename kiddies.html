@@ -425,66 +425,145 @@
         </div>
         <!-- Volunteers End -->
 
-        <!-- Services Start -->
+        <!-- Camp Activities Start -->
         <div class="container-fluid service py-5 bg-light">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5" style="max-width: 800px;">
                     <h5 class="text-uppercase text-white">Camp Activities</h5>
                     <h1 class="mb-0">Hawks Camp</h1>
                     <p class="mb-0">The Hawks camp builds on fundamental skills while introducing basic 
-                        tactics and teamwork. Activities are designed to be slightly more challenging to 
-                        keep kids engaged and motivated.
+                       tactics and teamwork. Activities are designed to be slightly more challenging to 
+                       keep kids engaged and motivated.
                     </p>
                 </div>
                 <div class="row g-4">
+                    <!-- Soccer Tots -->
                     <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/res5.jpg" class="img-fluid w-100" alt="Image">
+                        <div class="service-item" data-bs-toggle="modal" data-bs-target="#soccerTotsModal">
+                            <img src="img/hawks3.jpg" class="img-fluid w-100" alt="Soccer Tots Program">
+                            <div class="play-button">
+                                <i class="text-danger fa fa-play"></i>
+                            </div>
                             <div class="service-link">
-                                <a href="#" class="h4 mb-0">Small-Sided Matches</a>
+                                <a href="#" class="h4 mb-0 text-primary">Small-Sided Matches</a>
                             </div>
                         </div>
                         <p class="my-4">Kids play in teams of 3v3 or 4v4, learning positioning, teamwork, 
                             and decision-making in a friendly, competitive setup.
                         </p>
                     </div>
+                    <!-- Hawks -->
                     <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/res6.jpg" class="img-fluid w-100" alt="Image">
+                        <div class="service-item" data-bs-toggle="modal" data-bs-target="#hawksModal">
+                            <img src="img/hawks2.jpg" class="img-fluid w-100" alt="Hawks Program">
+                            <div class="play-button">
+                                <i class="text-primary fa fa-play"></i>
+                            </div>
                             <div class="service-link">
-                                <a href="#" class="h4 mb-0"> Target Passing Drills</a>
+                                <a href="#" class="h4 mb-0 text-primary">Target Passing Drills</a>
                             </div>
                         </div>
                         <p class="my-4">Participants pass the ball into specific targets or zones, 
                             improving their accuracy and control under guided instruction.
                         </p>
                     </div>
+                    <!-- Titans -->
                     <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/res3.jpg" class="img-fluid w-100" alt="Image">
+                        <div class="service-item" data-bs-toggle="modal" data-bs-target="#titansModal">
+                            <img src="img/hawks1.jpg" class="img-fluid w-100" alt="Titans Program">
+                            <div class="play-button">
+                                <i class="text-danger fa fa-play"></i>
+                            </div>
                             <div class="service-link">
-                                <a href="#" class="h4 mb-0">Defender Challenge</a>
+                                <a href="#" class="h4 mb-0 text-primary">Defender Challenge</a>
                             </div>
                         </div>
-                        <p class="my-4">A 1v1 activity where players take turns as attacker and defender, 
-                            helping them understand both offensive and defensive techniques. 
+                        <p class="my-4">Children take turns kicking the ball into small-sized goals, celebrating each 
+                            attempt with cheers and high-fives, fostering confidence and enthusiasm.
                         </p>
                     </div>
+                    <!-- Multipurpose -->
                     <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/res1.jpg" class="img-fluid w-100" alt="Image">
+                        <div class="service-item" data-bs-toggle="modal" data-bs-target="#multipurposeModal">
+                            <img src="img/BLOGt.jpg" class="img-fluid w-100" alt="Multipurpose Camp">
+                            <div class="play-button">
+                                <i class="text-primary fa fa-play"></i>
+                            </div>
                             <div class="service-link">
-                                <a href="#" class="h4 mb-0">Relay Races With A Ball</a>
+                                <a href="#" class="h4 mb-0 text-primary">Relay Races With A Ball</a>
                             </div>
                         </div>
                         <p class="my-4">Teams compete in dribbling relay races, focusing on speed, control, 
-                            and teamwork to reach the finish line.
+                            and teamwork to reach the finish line. 
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Services End -->
+        
+        <!-- Modals -->
+        <!-- Soccer Tots Modal -->
+        <div class="modal fade" id="soccerTotsModal" tabindex="-1" aria-labelledby="soccerTotsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="soccerTotsModalLabel">Small-Sided Matches</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://www.youtube.com/embed/rTYnxxCWkoM" frameborder="0" allowfullscreen class="w-100" style="height: 400px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hawks Modal -->
+        <div class="modal fade" id="hawksModal" tabindex="-1" aria-labelledby="hawksModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="hawksModalLabel">Target Passing Drills</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://www.youtube.com/embed/Vg3x8p1teGw" frameborder="0" allowfullscreen class="w-100" style="height: 400px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Titans Modal -->
+        <div class="modal fade" id="titansModal" tabindex="-1" aria-labelledby="titansModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="titansModalLabel">Defender Challenge</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="play-button">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://www.youtube.com/embed/oVpFkuPfDI8" frameborder="0" allowfullscreen class="w-100" style="height: 400px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Multipurpose Modal -->
+        <div class="modal fade" id="multipurposeModal" tabindex="-1" aria-labelledby="multipurposeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="multipurposeModalLabel">Relay Race With A Ball</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://www.youtube.com/embed/b0yLvUVprSU" frameborder="0" allowfullscreen class="w-100" style="height: 400px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Volunteers Start -->
         <div class="container-fluid volunteer py-5 mt-5">
@@ -545,10 +624,15 @@
                         and leadership development, preparing players for competitive environments.
                     </p>
                 </div>
+                
                 <div class="row g-4">
+                    <!-- Soccer Tots -->
                     <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/res5.jpg" class="img-fluid w-100" alt="Image">
+                        <div class="service-item" data-bs-toggle="modal" data-bs-target="#soccerTotsModal">
+                            <img src="img/titans1.jpg" class="img-fluid w-100" alt="Soccer Tots Program">
+                            <div class="play-button">
+                                <i class="text-danger fa fa-play"></i>
+                            </div>
                             <div class="service-link">
                                 <a href="#" class="h4 mb-0">Tactical Scrimmages</a>
                             </div>
@@ -557,9 +641,13 @@
                             such as maintaining possession or executing set plays, enhancing strategic thinking.
                         </p>
                     </div>
+                    <!-- Hawks -->
                     <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/res6.jpg" class="img-fluid w-100" alt="Image">
+                        <div class="service-item" data-bs-toggle="modal" data-bs-target="#hawksModal">
+                            <img src="img/titans2.jpg" class="img-fluid w-100" alt="Hawks Program">
+                            <div class="play-button">
+                                <i class="text-primary fa fa-play"></i>
+                            </div>
                             <div class="service-link">
                                 <a href="#" class="h4 mb-0"> Skill Mastery Drills</a>
                             </div>
@@ -568,9 +656,13 @@
                             and quick turns help players sharpen their individual skills.
                         </p>
                     </div>
+                    <!-- Titans -->
                     <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/res3.jpg" class="img-fluid w-100" alt="Image">
+                        <div class="service-item" data-bs-toggle="modal" data-bs-target="#titansModal">
+                            <img src="img/titans3.jpg" class="img-fluid w-100" alt="Titans Program">
+                            <div class="play-button">
+                                <i class="text-danger fa fa-play"></i>
+                            </div>
                             <div class="service-link">
                                 <a href="#" class="h4 mb-0">Leadership Challenges</a>
                             </div>
@@ -579,9 +671,13 @@
                             developing communication and decision-making abilities.
                         </p>
                     </div>
+                    <!-- Multipurpose -->
                     <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="service-item">
-                            <img src="img/res1.jpg" class="img-fluid w-100" alt="Image">
+                        <div class="service-item" data-bs-toggle="modal" data-bs-target="#multipurposeModal">
+                            <img src="img/titans4.jpg" class="img-fluid w-100" alt="Multipurpose Camp">
+                            <div class="play-button">
+                                <i class="text-primary fa fa-play"></i>
+                            </div>
                             <div class="service-link">
                                 <a href="#" class="h4 mb-0">Fitness And Endurance Trainings</a>
                             </div>
@@ -589,6 +685,70 @@
                         <p class="my-4">Participants engage in high-intensity workouts combined with ball 
                             exercises, building stamina and preparing them for competitive matches.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modals -->
+        <!-- Soccer Tots Modal -->
+        <div class="modal fade" id="soccerTotsModal" tabindex="-1" aria-labelledby="soccerTotsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="soccerTotsModalLabel">Tactical Scrimmages</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://www.youtube.com/embed/rTYnxxCWkoM" frameborder="0" allowfullscreen class="w-100" style="height: 400px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hawks Modal -->
+        <div class="modal fade" id="hawksModal" tabindex="-1" aria-labelledby="hawksModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="hawksModalLabel">Skill Mastery Drills</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://www.youtube.com/embed/Vg3x8p1teGw" frameborder="0" allowfullscreen class="w-100" style="height: 400px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Titans Modal -->
+        <div class="modal fade" id="titansModal" tabindex="-1" aria-labelledby="titansModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="titansModalLabel">Leadership Challenges</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="play-button">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://www.youtube.com/embed/oVpFkuPfDI8" frameborder="0" allowfullscreen class="w-100" style="height: 400px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Multipurpose Modal -->
+        <div class="modal fade" id="multipurposeModal" tabindex="-1" aria-labelledby="multipurposeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="multipurposeModalLabel">Fitness And Endurance Tranining</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://www.youtube.com/embed/b0yLvUVprSU" frameborder="0" allowfullscreen class="w-100" style="height: 400px;"></iframe>
                     </div>
                 </div>
             </div>
