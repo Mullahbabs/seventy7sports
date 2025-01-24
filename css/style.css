@@ -274,7 +274,7 @@
 /*** Service Start ***/
 .service .service-item {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     align-items: end;
     flex: 1;
     margin: 5px;
@@ -301,6 +301,8 @@
 .service .service-item .service-link a {
     color: var(--bs-white);
     transition: 0.5s;
+    display: flex;
+    justify-content: end;
 }
 
 .service .service-item img {
@@ -316,7 +318,7 @@
 }
 
 .service-item {
-    position: relative;
+    position: absolute ;
     overflow: hidden;
 }
 
@@ -719,6 +721,8 @@
 
 /*** Volunteer Start ***/
 .volunteer {
+    display: flex;
+    justify-content: flex-start;
     background: rgba(249, 195, 123, .1);
 }
 .volunteer .volunteer-img {
