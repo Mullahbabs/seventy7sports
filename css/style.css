@@ -433,6 +433,7 @@
     border-style: dotted;
     border-color: var(--bs-primary); 
     font-size: 30px;
+    
 }
 /*** Counter End ***/
 
@@ -441,7 +442,7 @@
     height: 100vh;
     text-align: center;
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/counterbg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/b2.jpg) center center no-repeat;
     background-size: cover;
 }
 
