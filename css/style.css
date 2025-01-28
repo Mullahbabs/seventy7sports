@@ -70,7 +70,7 @@
 }
 
 .btn-hover-bg:hover {
-    background: var(--bs-secondary) !important;
+    background: transparent !important;
     color: var(--bs-primary) !important;
 }
 
@@ -817,12 +817,13 @@
     border-bottom: 0;
     border-left: 0;
     border-style: dotted;
-    border-color: var(--bs-light);
+    border-color: var(--bs-primary);
+    background-color: #192531;;
 }
 .footer .footer-item a,
 .footer .footer-item p {
     line-height: 35px;
-    color: var(--bs-body);
+    color: var(--bs-white);
     transition: 0.5s;
 }
 
@@ -859,7 +860,7 @@
 
 .footer .footer-item .footer-gallery:hover .footer-search-icon {
     opacity: 1;
-    background: rgba(0, 0, 0, .6);
+    background: #192531;
 }
 /*** Footer End ***/
 
