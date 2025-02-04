@@ -82,5 +82,31 @@
     });
 
 
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select all like buttons
+        const likeButtons = document.querySelectorAll(".likeButton");
+    
+        likeButtons.forEach(button => {
+            const postId = button.getAttribute("data-post-id");
+            const likeCountElement = button.querySelector(".likeCount");
+    
+            // Load saved like count from localStorage
+            let likeCount = localStorage.getItem(postId) ? parseInt(localStorage.getItem(postId)) : 0;
+            likeCountElement.textContent = likeCount; 
+    
+            // Click event listener
+            button.addEventListener("click", function () {
+                likeCount += 1;
+                likeCountElement.textContent = likeCount;
+                localStorage.setItem(postId, likeCount); // Save count in localStorage
+            });
+        });
+    });
+    
+    
+    
+    
+
+
 })(jQuery);
 
