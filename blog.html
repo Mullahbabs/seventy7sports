@@ -158,8 +158,10 @@
                             </div>
                             <div class="blog-info">
                                 <span><i class="fa fa-clock text-primary"></i>Dec. 01 2024 </span>
-                                <span class="me-3">  <i class="fa fa- text-primary"></i></span>
-                                <a href="#" class="text-white"><span class="me-3"> 8 <i class="fa fa-heart text-primary"></i></span> 0 <i class="fa fa-comment text-primary"></i></a>
+                                <span class="me-3">  <i class="fa fa text-primary"></i></span>
+                                <span class="likeButton" onclick="increaseLikes(this)" style="cursor:pointer; user-select:none"><i class="fa fa-heart text-primary"></i>
+                                    <span class="likeCount">8 </span>
+                                </span>
                             </div>
                             <div class="text-white p-4 ">
                                 <a href="#blog1" class="h5 text-primary mb-4">The Importance of Early Sports Development...<br> <i class="fa fa-arrow-down text-primary"></i> 
@@ -182,7 +184,9 @@
                             <div class="blog-info">
                                 <span><i class="fa fa-clock text-primary"></i>Dec. 09 2024 </span>
                                 <span class="me-3">  <i class="fa fa- text-primary"></i></span>
-                                <a href="#" class="text-white"><span class="me-3"> 14 <i class="fa fa-heart text-primary"></i></span> 0 <i class="fa fa-comment text-primary"></i></a>
+                                <span class="likeButton" onclick="increaseLikes(this)" style="cursor:pointer; user-select:none"><i class="fa fa-heart text-primary"></i>
+                                    <span class="likeCount"> 23 </span>
+                                </span>
                             </div>
                             <div class="text-dark p-4 ">
                                 <a href="#blog2" class="h5 mb-4">Top 5 Essential Gear for Every Athlete 
@@ -780,6 +784,14 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script>
+        function increaseLikes(element) {
+            let likeCountElement = element.querySelector(".likeCount");
+            let currentCount = parseInt(likeCountElement.textContent);
+            likeCountElement.textContent = currentCount + 1;
+        }
+    </script>
     
 
     <!-- Template Javascript -->
