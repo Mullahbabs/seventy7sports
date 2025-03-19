@@ -322,38 +322,67 @@
                     <div class="col-lg-5">
                         <div class="row g-4">
                             <div class="col-lg-6">
-                                <div class="volunteer-img">
+                                <div class="volunteer-img" 
+                                onclick="showDetails
+                                ('Egbe Fidel', 'Football Coach', 
+                                'Egbe Fidel is a highly experienced football coach with a passion for developing young talent.'
+                                
+                                )">
                                     <img src="img/malesoccercoach.jpg" class="img-fluid w-100" alt="Image">
                                     <div class="volunteer-title">
                                         <h5 class="mb-2 text-white">Egbe Fidel</h5>
                                         <p class="mb-0 text-white">Football Coach</p>
+                                        <p class="text-primary bg-dark" style="font-weight: bolder;">
+                                            info
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="volunteer-img">
-                                    <img src="img/femalebasketballcoach .jpg" class="img-fluid w-100" alt="Image">
+                                <div class="volunteer-img" onclick="showDetails
+                                ('Jane Doe', 'Basketball Coach', 
+                                'Jane Doe has been coaching basketball for over a decade, specializing in skill development.'
+
+                                )">
+                                    <img src="img/malesoccercoach.jpg" class="img-fluid w-100" alt="Image">
                                     <div class="volunteer-title">
                                         <h5 class="mb-2 text-white">Jane Doe</h5>
                                         <p class="mb-0 text-white">Basketball Coach</p>
+                                        <p class="text-primary bg-dark" style="font-weight: bolder;">
+                                            info
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="volunteer-img">
-                                    <img src="img/malevolleyballcoach .jpg" class="img-fluid w-100" alt="Image">
+                                <div class="volunteer-img" onclick="showDetails
+                                ('John Doe', 'Volleyball Coach', 
+                                'John Doe brings exceptional leadership and training techniques to volleyball coaching.'
+                                
+                                )">
+                                    <img src="img/femalelawntennislcoach.jpg" class="img-fluid w-100" alt="Image">
                                     <div class="volunteer-title">
                                         <h5 class="mb-2 text-white">John Doe</h5>
-                                        <p class="mb-0 text-white">Volleyball Coach.</p>
+                                        <p class="mb-0 text-white">Volleyball Coach</p>
+                                        <p class="text-primary bg-dark" style="font-weight: bolder;">
+                                            info
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="volunteer-img">
+                                <div class="volunteer-img" onclick="showDetails
+                                ('Jane Deo', 'Tennis Coach', 
+                                'Jane Deo is a professional tennis coach committed to helping players achieve their goals.'
+                                
+                                )">
                                     <img src="img/femalelawntennislcoach.jpg" class="img-fluid w-100" alt="Image">
                                     <div class="volunteer-title">
                                         <h5 class="mb-2 text-white">Jane Deo</h5>
                                         <p class="mb-0 text-white">Tennis Coach</p>
+                                        <p class="text-primary bg-dark" style="font-weight: bolder;">
+                                            info
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -362,28 +391,36 @@
                     <div class="col-lg-7">
                         <h5 class="text-uppercase text-primary">OUR WORLD-CLASS COACHES</h5>
                         <h1 class="mb-4">The Faces Behind Our Success.</h1>
-                        <p class="mb-4">At Seventy7Sports, we take pride in having a team of 
-                            world-class coaches who are dedicated to helping athletes unlock 
-                            their full potential. Our coaches bring a wealth of experience, 
-                            knowledge, and passion to the field, ensuring that every athlete 
-                            receives the guidance they need to excel. Whether you’re just starting 
-                            out or aiming for elite-level competition, our coaches are here to provide 
-                            personalized training, expert advice, and unwavering support while aiming for 
-                            excellence and long-term athlete development.
-                        </p>
-                        <p class="text-white" style="text-align: justify;"><i class=" fa fa-check text-primary me-2"></i> Certified professional coaches</span>
-                            <span class="text-white"><i class=" fa fa-check text-primary me-2"></i> Professionally screened and background checked</span>
-                            <span class="text-white"><i class=" fa fa-check text-primary me-2"></i> Experienced and skilled demonstrators</span>
-                            <span class="text-white"><i class=" fa fa-check text-primary me-2"></i> Positive role models</span><br>
-                            <span class="text-white"><i class=" fa fa-check text-primary me-2"></i> Committed to child development</span>
-                            <span class="text-white"><i class=" fa fa-check text-primary me-2"></i> Passionate sports enthusiasts</span><br>
-                            <span class="text-white"><i class=" fa fa-check text-primary me-2"></i> First-Aid & CPR certified</span>
+                        <div id="default-content">
+                            <p class="mb-4">At Seventy7Sports, we take pride in having a team of world-class 
+                                coaches who are dedicated to helping athletes unlock their full potential. Our 
+                                coaches bring a wealth of experience, knowledge, and passion to the field, ensuring 
+                                that every athlete receives the guidance they need to excel. Whether you’re just starting 
+                                out or aiming for elite-level competition, our coaches are here to provide personalized 
+                                training, expert advice, and unwavering support while aiming for excellence and long-term 
+                                athlete development.
+                            </p>
+                        </div>
+                        <div id="dynamic-content" style="display: none;">
+                            <h3 id="coach-name"></h3>
+                            <p id="coach-role"></p>
+                            <p id="coach-description"></p>
+                        </div>
+                        <p class="text-white" style="text-align: justify;">
+                            <i class="fa fa-check text-primary me-2"></i> Certified professional coache<br>
+                            <i class="fa fa-check text-primary me-2"></i> Professionally screened and background checked<br>
+                            <i class="fa fa-check text-primary me-2"></i> Experienced and skilled demonstrator<br>
+                            <i class="fa fa-check text-primary me-2"></i> Positive role model<br>
+                            <i class="fa fa-check text-primary me-2"></i> Committed to child development<br>
+                            <i class="fa fa-check text-primary me-2"></i> Passionate sports enthusiast<br>
+                            <i class="fa fa-check text-primary me-2"></i> First-Aid & CPR certified
                         </p>
                         <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Host A Coach</a>
                     </div>
                 </div>
             </div>
         </div>
+        
         <!-- Volunteers End -->
 
         <!-- Footer Start -->
@@ -575,6 +612,16 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+        <script>
+            function showDetails(name, role, description) {
+                document.getElementById('default-content').style.display = 'none';
+                document.getElementById('dynamic-content').style.display = 'block';
+                document.getElementById('coach-name').innerText = name;
+                document.getElementById('coach-role').innerText = role;
+                document.getElementById('coach-description').innerText = description;
+            }
+        </script>
 
     </body>
 
