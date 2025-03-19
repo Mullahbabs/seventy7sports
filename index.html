@@ -20,6 +20,9 @@
         <!-- Libraries Stylesheet -->
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
 
 
         <!-- Customized Bootstrap Stylesheet -->
@@ -183,12 +186,12 @@
                 <div class="row g-5">
                     <div class="col-xl-5" style="background-color: white;">
                         <div class="h-100">
-                            <img src="img/newnew111.jpg" class="img-fluid w-100 h-100" alt="Image">
+                            <img src="img/newnew111.jpg" class="img-fluid w-100 h-100 wow fadeInDown" data-wow-delay="0.3s" alt="Image">
                         </div>
                     </div>
-                    <div class="col-xl-7">
+                    <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.5s">
                         <h5 class="text-uppercase text-white">About Us</h5>
-                        <h1 class="mb-4" style="color: #d4af37;">Seventy7Sports</h1>
+                        <h1 class="mb-4 wow fadeInUp" data-wow-delay="0.5s" style="color: #d4af37;">Seventy7Sports</h1>
                         <p class="fs-5 mb-4">At Seventy7Sports, we are passionate about fueling your love for sports. 
                             Whether you’re a professional athlete or a weekend warrior, our mission is to provide you 
                             with the gear, resources, and inspiration you need to perform at your best. From cutting-edge 
@@ -1185,12 +1188,16 @@
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
         
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+            new WOW().init(); 
+        </script>
 
     </body>
 

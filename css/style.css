@@ -805,8 +805,8 @@
 
 /*** Contact Start ***/
 .contact {
-    background: var(--bs-light);
-    border-style: dotted;
+    background: var(--bs-body);
+    border-style: none;
     border-color: var(--bs-white);
 }
 
@@ -819,7 +819,7 @@
     border-right: 0;
     border-bottom: 0;
     border-left: 0;
-    border-style: dotted;
+    border-style: none;
     border-color: var(--bs-primary);
     background-color: #192531;;
 }
