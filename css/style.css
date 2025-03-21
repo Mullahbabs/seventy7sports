@@ -885,8 +885,8 @@
 }
 
 .tab-buttons {
-    display: inline;
-    justify-content: left;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
