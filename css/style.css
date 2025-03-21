@@ -873,3 +873,92 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+.content-tabs {
+    display: inline;
+    font-family: Arial, sans-serif;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--bs-body);
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ddd;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+.tab-button:hover {
+    background-color: #bbb;
+}
+
+.tab-content {
+    width: 100%;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: var(--bs-body);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: flex;
+}
+
+.topic {
+    margin-bottom: 30px;
+    text-align: justify;
+    width: 100%; /* Ensure topic takes full width */
+    max-width: 300px; /* Match image width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topic img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.meta {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.meta .author {
+    font-weight: bold;
+}
+
+.meta .date {
+    margin-left: 10px;
+    color: #999;
+}
+
+.topic p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    width: 100%; /* Ensure text takes the same width as the image */
+    text-align: left; /* Align text to the left */
+}
