@@ -886,8 +886,9 @@
 
 .tab-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 20px;
+
 }
 
 .tab-button {
@@ -922,7 +923,7 @@
 }
 
 .tab-pane.active {
-    display: flex;
+    display: block;
 }
 
 .topic {
@@ -932,6 +933,10 @@
     max-width: 300px; /* Match image width */
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid #eee; /* Add a light border */
+    padding: 15px; /* Add some padding */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background *
 }
 
 .topic img {
