@@ -157,8 +157,8 @@
 }
 
 .dropdown .dropdown-menu a:hover {
-    background: var(--bs-secondary);
-    color: var(--bs-primary);
+    background: var(--bs-primary);
+    color: var(--bs-white);
 }
 
 .navbar .nav-item:hover .dropdown-menu {
@@ -595,7 +595,7 @@
 
 .event .event-carousel.owl-carousel .owl-nav .owl-prev:hover,
 .event .event-carousel.owl-carousel .owl-nav .owl-next:hover {
-    background: var(--bs-secondary);
+    background: var(--bs-white);
     color: var(--bs-primary);
 }
 .event .event-carousel .event-item .event-content {
@@ -909,7 +909,7 @@
 }
 
 .tab-button:hover {
-    background-color: #bbb;
+    background-color: var(--bs-primary);
 }
 
 .tab-content {
