@@ -657,6 +657,24 @@
 .blog .blog-item .blog-img:hover .search-icon {
     opacity: 1;
 }
+
+.likeButton {
+    display: flex;
+    margin: 10px;
+    background-color: #192531;
+    color: #fff;
+    border: 1px solid var(--bs-primary);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.likeButton:hover {
+    background-color: #fff;
+}
+.likeCount {
+    margin-left: 20px;
+    font-weight: normal;
+}
 /*** Blog End ***/
 
 /*** Gallery Start ***/
