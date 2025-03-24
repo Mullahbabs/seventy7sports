@@ -658,6 +658,35 @@
     opacity: 1;
 }
 
+.blog-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.blog-post {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    
+}
+.blog-post-title {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+.blog-post-content {
+    line-height: 1.6;
+    color: #666;
+}
+
 .likeButton {
     display: flex;
     margin: 10px;
