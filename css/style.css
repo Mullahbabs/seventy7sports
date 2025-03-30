@@ -715,6 +715,7 @@
 
 .gallery .gallery-item img {
     transition: 0.5s;
+    border: 4px solid #192531;
 }
 
 .gallery .gallery-item:hover img {
