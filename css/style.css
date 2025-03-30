@@ -875,6 +875,7 @@
 .footer .footer-item a,
 .footer .footer-item p {
     line-height: 35px;
+    font-family: 14px;
     color: var(--bs-white);
     transition: 0.5s;
 }
