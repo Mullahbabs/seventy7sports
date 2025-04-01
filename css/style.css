@@ -378,6 +378,7 @@
 /*** Donation Start ***/
 .donation .donation-item {
     position: relative;
+    height: 100%;
     overflow: hidden;
     z-index: 1;
 }
@@ -562,6 +563,8 @@
 /*** Events Start ***/
 .event .event-carousel.owl-carousel {
     position: relative;
+    height: 100%;
+    border: 1px solid #d4af37;
 }
 .event .event-carousel.owl-carousel .owl-nav .owl-prev {
     position: absolute;
@@ -599,6 +602,7 @@
     color: var(--bs-primary);
 }
 .event .event-carousel .event-item .event-content {
+    height: 100%;
     border-style: dotted;
     border-top: 0; 
     border-color: transparent; 
