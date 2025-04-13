@@ -1030,9 +1030,9 @@
 
 /* Modern Container Styles */
 .modern-container {
-    max-width: 1200px;
+    width: 100%;
     margin: 40px auto;
-    padding: 0 20px;
+    padding: 20px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -1040,7 +1040,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    background: white;
+    background: var(--bs-body);
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     overflow: hidden;
@@ -1055,10 +1055,13 @@
 .right-section {
     flex: 1;
     min-width: 300px;
+    height: 100%;
     padding: 40px;
     background: #f9fafc;
     display: flex;
     flex-direction: column;
+    border-radius: 30px;
+    margin-top: 40px;
     justify-content: space-between;
 }
 
@@ -1067,7 +1070,7 @@
     height: 240px;
     border-radius: 12px;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .featured-image {
